@@ -4,7 +4,7 @@ import os
 current_dir = os.path.dirname(os.path.realpath(__file__))
 stl_file = os.path.join(current_dir,'Tet.stl')
 
-print(stl_file)
+# print(stl_file)
 
 def dist_2pts(node1,node2):
     x1,y1,z1 =node1
@@ -40,7 +40,7 @@ tria_vertex_list = read_stl_file(stl_file)
 def calc_tria_area(tria_list):
     tria_areas =[]
     for tria in tria_list:
-        print(tria)
+        # print(tria)
         n1,n2,n3 = tria
         # print (n1,n2,n3)
         a = dist_2pts(n1,n2)
